@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# Modern React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a **modern React application** built using **Vite**, **TypeScript**, **TailwindCSS**, and **PostCSS**. The app showcases best practices for modern React development, including **React Hooks**, **Routing**, **Theme Switching (Dark/Light Mode)**, and **Multi-language (i18n) support**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React & TypeScript:** Type-safe and scalable frontend architecture.
+* **Vite:** Fast development environment with hot module replacement.
+* **TailwindCSS & PostCSS:** Utility-first styling for rapid UI development.
+* **React Router:** Multi-page navigation.
+* **React Hooks:** Modern state and effect management.
+* **Theme Switcher:** Toggle between dark and light modes.
+* **i18n / Multi-language:** Easy integration of multiple languages.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <https://github.com/vorlaxen/modern-react-app.git>
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Open your browser at the URL provided by Vite to explore the app. You can switch themes, navigate between pages, and test the multi-language functionality.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Playlist
+
+This project was created following a detailed **video playlist**. You can watch the full playlist 
+[here](https://www.youtube.com/watch?v=2_qeK7PsFjk&list=PLebcif8eeYRhH8Tptsi2Q_cJ99WSdVGFI). 
+Each video covers specific topics such as setup, routing, theming, and internationalization.
+
+## License
+
+This project is open-source and available under the MIT License.
